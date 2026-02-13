@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>💘 Mini Aşk Testi</title>
+  <title>💘 Hilayda-Tuna Aşk Testi</title>
   <style>
     :root {
       --bg1: #0b0b14;
@@ -295,10 +295,10 @@
   <div class="wrap" id="card">
     <div class="top">
       <div>
-        <div class="title">💘 Mini Aşk Testi</div>
-        <div class="subtitle">5 soruyu da bilirsen sürpriz var…</div>
+        <div class="title">💘 Hilayda-Tuna Aşk Testi</div>
+        <div class="subtitle">9 soruyu da bilirsen sürpriz var… (her sene icin 1 soru)</div>
       </div>
-      <div class="pill" id="progress">Soru 1 / 5</div>
+      <div class="pill" id="progress">Soru 1 / 9</div>
     </div>
 
     <div class="q" id="questionText">Yükleniyor…</div>
@@ -324,8 +324,9 @@
       <div class="love-note" id="loveNote">
         Sevgilim,
 
-        Buraya sonra kendi mesajını yazabilirsin 💌
-        (İstersen ben taslak da yazarım.)
+        Seninle gecirdigim 9 sene icin cok sansliyim, lutfen bunu 99 yapalim.
+        Iyi ki hayatimdasin, iyi ki benimlesin. Seni cok seviyorum. 💗
+        Bu ucusan kalplerin de hepsi sana :)
       </div>
 
       <div class="btnrow">
@@ -342,28 +343,48 @@
     // Sen sonra burayı kolayca düzenleyeceksin.
     const questions = [
       {
-        text: "En sevdiğimiz film hangisi?",
+        text: "Bizim filmimiz hangisi?",
         choices: ["Before Sunrise", "The Godfather", "Inception"],
         correctIndex: 0
       },
       {
-        text: "Sence en romantik tatlı hangisi? (şimdilik random 😄)",
-        choices: ["Tiramisu", "Baklava", "Cheesecake"],
+        text: "Roma'da yildonumumuzu kutlarken hangi tatliyi yemistik?",
+        choices: ["Baklava", "Tiramisu", "Cheesecake"],
+        correctIndex: 1
+      },
+      {
+        text: "Ciddilik dersimi aldim mi?",
+        choices: ["Daha cok yolun var cekirge", "Aldin", "Ciddiydin zaten"],
         correctIndex: 0
       },
       {
-        text: "Birlikte en çok hangi mevsimi seviyoruz? (random)",
-        choices: ["İlkbahar", "Kış", "Yaz"],
+        text: "Kalbimde hangi canliyi ucuruyorsun?",
+        choices: ["Kanarya", "Kartal", "Kelebek"],
+        correctIndex: 2
+      },
+      {
+        text: "Altinda hangi pijama var?",
+        choices: ["Garfieldli", "Ayicikli", "Flamingolu"],
         correctIndex: 0
       },
       {
-        text: "Aşkın rengi sence hangisi? (random)",
-        choices: ["Pembe", "Mavi", "Yeşil"],
-        correctIndex: 0
+        text: "Patlamis misirla ne gider?",
+        choices: ["Kivi", "Mango", "Mandalina"],
+        correctIndex: 2
       },
       {
-        text: "Bugün kim çok tatlı? 😌",
-        choices: ["Sen", "Sen", "Sen"],
+        text: "Tuna Tuncer sizi ne tanricasi olmakla suclamistir?",
+        choices: ["Olaylar", "Detaylar", "Saraylar"],
+        correctIndex: 1
+      },
+      {
+        text: "Bana ne kadar asiksin?",
+        choices: ["Orta", "Eh", "SONSUZLAR SONSUZU"],
+        correctIndex: 2
+      },
+      {
+        text: "Dunyanin en tatli seysi ne? 😌",
+        choices: ["Sen", "Hic kimse", "Hic kimse"],
         correctIndex: 0
       }
     ];
@@ -429,7 +450,7 @@
         feedbackEl.textContent = "Doğru! 💗";
         feedbackEl.classList.add("ok");
       } else {
-        feedbackEl.textContent = "Ahh olmadı 🙈 Baştan dene!";
+        feedbackEl.textContent = "Ahh olmadı 🙈 Baştan dene birtanem!";
         feedbackEl.classList.add("bad");
       }
 
